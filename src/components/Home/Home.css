@@ -1,0 +1,10 @@
+.home{
+  height: 100%;
+  width: 100%
+}
+
+.carousel{
+  width: 100vw;
+  height: 300px;
+  background-color: gray
+}
