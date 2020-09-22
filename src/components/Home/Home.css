@@ -8,3 +8,13 @@
   height: 300px;
   background-color: gray
 }
+
+.chapters{
+  position: relative;
+  height: 70px;
+  width: 200px;
+  margin: 115px auto;
+  color: white;
+  background-color:  rgb(192, 103, 103);
+  border-radius: 15px;
+}
