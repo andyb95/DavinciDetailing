@@ -6,14 +6,12 @@ const Nav = () => {
 
   return (
     <div className='nav'>
-      <div className='logo'>Cascade Networking</div>
+      <Link className='logo' to='/'>Davinci Detailing</Link>
       <div className='links'>
         <Link className='link' to='/account'>Account</Link>
-        <Link className='link' to='/referrals'>Referrals</Link>
-        <Link className='link' to='/chat'>Chat</Link>
-        <Link className='link' to='/professionals'>Professionals</Link>
-        <Link className='link' to='/login'>Login</Link>
-        <Link className='link' to='/feed'>Feed</Link>
+        <Link className='link' to='/services'>Services</Link>
+        <Link className='link' to='/contact'>Contact Us</Link>
+        <Link className='link' to='/cart'>Cart</Link>
       </div>
     </div>
   )
