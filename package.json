@@ -13,6 +13,7 @@
     "cors": "^2.8.5",
     "express-session": "^1.17.2",
     "massive": "^6.9.1",
+    "moment": "^2.29.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.4",
