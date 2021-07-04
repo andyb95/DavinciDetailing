@@ -25,9 +25,9 @@ const Register = ({
         }
     },[loggedIn, isAdmin, history])
 
-	const registerUser = (e) => {
+	const registerUser = async e => {
 		e.preventDefault();
-		axios
+		await axios
 			.post('/user/register', { email: email, password: password })
 			.then((res) => {
                 console.log(res)

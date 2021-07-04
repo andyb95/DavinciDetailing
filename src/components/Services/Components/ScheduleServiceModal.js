@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import Scheduler from './Scheduler'
-import Stripe from './Stripe'
-import Confirmation from './Confirmation'
+import Calendar from '../../Calendar/Calendar'
+import Checkout from '../../Stripe/Checkout'
+import Success from '../../Stripe/Success'
+import Canceled from '../../Stripe/Canceled'
 
 const ScheduleServiceModal = ({
     scheduleServiceType,
@@ -14,11 +15,11 @@ const ScheduleServiceModal = ({
             <h1>{scheduleServiceType}</h1>
             <button onClick={() => setScheduleServiceType(null)}>X</button>
             {pageNumber === 1 ? (
-                <Scheduler />
+                <Calendar />
             ) : pageNumber === 2 ? (
-                <Stripe />
+                <Checkout />
             ) : pageNumber === 3 ? (
-                <Confirmation />
+                <Success />
             ) : null}
             {pageNumber > 1 ? (
                 <button onClick={() => setPageNumber(pageNumber-1)}>Previous</button>

@@ -10,6 +10,10 @@ import Cart from './components/Cart/Cart'
 import Login from './components/Login/Login'
 import Register from './components/Register/Register'
 
+// import Checkout from './components/Stripe/Checkout';
+// import Success from './components/Stripe/Success';
+// import Canceled from './components/Stripe/Canceled';
+
 export default (
   <Switch>
     <Route exact path='/' component={Home}/>
@@ -21,5 +25,15 @@ export default (
     <Route path='/cart' component={Cart}/>
     <Route path='/login' component={Login}/>
     <Route path='/register' component={Register}/>
+    {/* <Route path="/success.html">
+      <Success />
+    </Route>
+    <Route path="/canceled.html">
+      <Canceled />
+    </Route>
+    <Route path="/checkout">
+      <Checkout />
+    </Route> */}
+    {/* <Route path='/checkoutSuccess' component={Success} /> */}
   </Switch>
 )
