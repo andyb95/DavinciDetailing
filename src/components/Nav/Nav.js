@@ -7,9 +7,8 @@ const Nav = ({ user }) => {
 
   return (
     <div className='nav'>
-      <Link className='logo' to='/'>
-        <img src='../../images/Logo.jpg' alt='logo' />
-        {/* <img src='./../images/Logo.jpg' alt='logo' /> */}
+      <Link className='logoText' to='/'>
+        <img src='NavLogo.jpg' alt='logo' className='logo' />
         Davinci Detailing
       </Link>
       {/* make this shit a muthfuckn HAMBURGER menu */}

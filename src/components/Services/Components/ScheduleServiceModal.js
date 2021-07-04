@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Calendar from '../../Calendar/Calendar'
 import Checkout from '../../Stripe/Checkout'
 import Success from '../../Stripe/Success'
-import Canceled from '../../Stripe/Canceled'
 
 const ScheduleServiceModal = ({
     scheduleServiceType,

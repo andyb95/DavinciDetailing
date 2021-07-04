@@ -4,12 +4,17 @@
   background-color: rgb(192, 103, 103);
 }
 
-.logo{
+.logoText{
   font-size: larger;
   position: absolute;
-  left: 25px;
-  top: 25px;
+  left: 12px;
+  top: 12px;
   color: white;
+}
+
+.logo{
+  height: 51px;
+  width: 51px;
 }
 
 .links{

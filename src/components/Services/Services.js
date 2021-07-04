@@ -7,27 +7,27 @@ const Services = () => {
     {
       type: 'Interior Detail',
       cost: 250,
-      imgPath: '/images/InteriorDetail.jpg'
+      imgPath: 'InteriorDetail.jpg'
     },
     {
       type: 'Exterior Hand Wash',
       cost: 120,
-      imgPath: '/images/HandWash.jpg'
+      imgPath: 'HandWash.jpg'
     },
     {
       type: 'Exterior Hand Wash and Polish',
       cost: 400,
-      imgPath: '/images/HandWashAndPaintPolish.jpg'
+      imgPath: 'HandWashAndPaintPolish.jpg'
     },
     {
       type: 'Ceramic Coating',
       cost: 900,
-      imgPath: '/images/CeramicCoating.jpg'
+      imgPath: 'CeramicCoating.jpg'
     },
     {
       type: 'Deep Scratch Repair',
       cost: 50,
-      imgPath: null
+      imgPath: 'ScratchRepair.jpg'
     },
   ]
 
@@ -35,7 +35,7 @@ const Services = () => {
     <div>
       {services.map((service, i) => (
         <div key={i}>
-          <img src={service.imgPath} alt={service.type} />
+          <img src={`images/${service.imgPath}`} alt={service.type} />
           {service.type}: ${service.cost}
           <button onClick={() => setScheduleServiceType(service.type)}>
             Schedule
@@ -43,10 +43,7 @@ const Services = () => {
         </div>
       ))}
       {scheduleServiceType ?
-        <ScheduleServiceModal
-          scheduleServiceType={scheduleServiceType}
-          setScheduleServiceType={setScheduleServiceType}  
-        />
+        <ScheduleServiceModal />
       : null}
     </div>
   )
